@@ -4,13 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.reyhan.getdataapi.data.UsersItem
+import com.reyhan.getdataapi.first.data.UsersItem
 import com.reyhan.getdataapi.databinding.ActivityMainBinding
-import com.reyhan.getdataapi.network.ApiConfig
+import com.reyhan.getdataapi.first.AdapterUsers
+import com.reyhan.getdataapi.first.network.ApiConfig
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
 

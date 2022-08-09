@@ -1,12 +1,10 @@
-package com.reyhan.getdataapi
+package com.reyhan.getdataapi.first
 
-import android.media.Image
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.reyhan.getdataapi.data.UsersItem
+import com.reyhan.getdataapi.first.data.UsersItem
 import com.reyhan.getdataapi.databinding.ItemUsersBinding
 
 class AdapterUsers : RecyclerView.Adapter<AdapterUsers.UserViewHolder>() {

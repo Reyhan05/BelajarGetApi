@@ -1,7 +1,7 @@
-package com.reyhan.getdataapi.network
+package com.reyhan.getdataapi.first.network
 
 import retrofit2.Call
-import com.reyhan.getdataapi.data.UsersItem
+import com.reyhan.getdataapi.first.data.UsersItem
 import retrofit2.http.GET
 import retrofit2.http.Headers
 

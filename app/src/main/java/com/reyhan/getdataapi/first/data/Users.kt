@@ -1,4 +1,4 @@
-package com.reyhan.getdataapi.data
+package com.reyhan.getdataapi.first.data
 
 import com.google.gson.annotations.SerializedName
 

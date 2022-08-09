@@ -1,4 +1,4 @@
-package com.reyhan.getdataapi.network
+package com.reyhan.getdataapi.first.network
 
 import com.reyhan.getdataapi.BuildConfig
 import okhttp3.OkHttpClient
