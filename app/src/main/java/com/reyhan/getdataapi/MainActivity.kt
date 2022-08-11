@@ -14,10 +14,10 @@ import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
 
-    private var _binding : ActivityMainBinding? = null
+    private var _binding: ActivityMainBinding? = null
     private val binding get() = _binding as ActivityMainBinding
 
-    private val adapterUsers  =  AdapterUsers()
+    private val adapterUsers = AdapterUsers()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun setData(data: ArrayList<UsersItem>){
+    fun setData(data: ArrayList<UsersItem>) {
         // set layout manager and adapter
         binding.rvList.apply {
             layoutManager = LinearLayoutManager(applicationContext)
@@ -38,8 +38,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    fun getDataApi(){
-        ApiConfig.getApiService().getListUser().enqueue(object : Callback<ArrayList<UsersItem>>{
+    fun getDataApi() {
+        ApiConfig.getApiService().getListUser().enqueue(object : Callback<ArrayList<UsersItem>> {
             override fun onResponse(
                 call: Call<ArrayList<UsersItem>>,
                 response: Response<ArrayList<UsersItem>>
@@ -56,5 +56,4 @@ class MainActivity : AppCompatActivity() {
 
         })
     }
-
 }
